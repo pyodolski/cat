@@ -13,5 +13,5 @@ spring:
     open-in-view: false # false로 설정하면, 데이터베이스 세션이 컨트롤러 진입 시에 열리고, 뷰 렌더링 시에 닫히지 않습니다.
     show-sql: true # Hibernate가 실행하는 SQL 쿼리를 콘솔에 출력하도록 설정합니다.
     properties:
-      hibernate: 
+      hibernate:
         format_sql: true # 출력되는 SQL 쿼리를 보기 좋게 포맷팅합니다.
