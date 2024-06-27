@@ -24,4 +24,7 @@ public class UserEntity extends DefaultBaseEntity {
 
     @Column(length = 50, nullable = false, unique = true) // 유일한 값
     private String email; // 이메일
+
+    @Column(length = 100, nullable = false)
+    private String password; // 비밀번호
 }

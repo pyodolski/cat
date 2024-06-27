@@ -1,17 +1,18 @@
 spring:
   application:
-  name: cat
+    name: cat
 
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/db?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://127.0.0.1:3306/cat?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
     username: root
-    password: 00000000
+    password: p15221522w?
 
   jpa:
+    show-sql: true
+    open-in-view: false
+    generate-ddl: true
     hibernate:
-      ddl-auto: update # update는 기존 스키마를 변경사항에 맞게 업데이트
-    open-in-view: false # false로 설정하면, 데이터베이스 세션이 컨트롤러 진입 시에 열리고, 뷰 렌더링 시에 닫히지 않습니다.
-    show-sql: true # Hibernate가 실행하는 SQL 쿼리를 콘솔에 출력하도록 설정합니다.
+      ddl-auto: update
     properties:
       hibernate:
-        format_sql: true # 출력되는 SQL 쿼리를 보기 좋게 포맷팅합니다.
+        format_sql: true
